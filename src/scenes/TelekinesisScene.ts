@@ -62,10 +62,11 @@ export class TelekinesisScene extends Phaser.Scene {
     this.instructionText = this.add.text(
       width / 2,
       height - 150,
-      '5回クリックして玉をターゲットに移動させてください！',
+      '指示：「動け！動け！」と念じながらクリック！\n５回でターゲットに入れろ！',
       {
         fontSize: '20px',
         color: '#ffff00',
+        align: 'center',
       }
     ).setOrigin(0.5);
 
