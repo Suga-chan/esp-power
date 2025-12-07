@@ -9,9 +9,21 @@ import { ResultScene } from './scenes/ResultScene';
 
 export const gameConfig: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 700,
-  parent: 'app',
+  scale: {
+    mode: Phaser.Scale.FIT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
+    parent: 'app',
+    width: 800,
+    height: 700,
+    min: {
+      width: 360,
+      height: 640,
+    },
+    max: {
+      width: 1200,
+      height: 1050,
+    },
+  },
   backgroundColor: '#000000',
   physics: {
     default: 'arcade',
