@@ -22,6 +22,13 @@ export class TitleScene extends Phaser.Scene {
       })
       .setOrigin(0.5);
 
+    this.add
+      .text(width / 2, height / 3 + 100, "あなたの潜在能力を測ります", {
+        fontSize: "20px",
+        color: "#aaaaaa",
+      })
+      .setOrigin(0.5);
+
     const startText = this.add
       .text(width / 2, (height / 3) * 2, "クリックして開始", {
         fontSize: "24px",
