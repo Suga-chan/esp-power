@@ -10,19 +10,11 @@ import { ResultScene } from './scenes/ResultScene';
 export const gameConfig: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   scale: {
-    mode: Phaser.Scale.FIT,
+    mode: Phaser.Scale.RESIZE,
     autoCenter: Phaser.Scale.CENTER_BOTH,
     parent: 'app',
-    width: 800,
-    height: 700,
-    min: {
-      width: 360,
-      height: 640,
-    },
-    max: {
-      width: 1200,
-      height: 1050,
-    },
+    width: window.innerWidth,
+    height: window.innerHeight,
   },
   backgroundColor: '#000000',
   physics: {
